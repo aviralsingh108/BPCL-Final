@@ -1,0 +1,19 @@
+// .outer{
+//     background-image: url("http://themestarz.net/html/innovo/assets/img/background-boat.jpg");
+//     background-repeat: no-repeat;
+//     position: absolute;
+// }
+// div {
+//     background-image:
+//         url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+//         background-color: transparent;
+// -moz-background-size: cover;
+// -o-background-size: cover;
+//   }
+
+.container{
+    background-image: url("http://themestarz.net/html/innovo/assets/img/background-boat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height:100%;
+}

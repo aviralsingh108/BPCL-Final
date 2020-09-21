@@ -1,0 +1,16 @@
+<mat-toolbar>
+    This is The Header
+</mat-toolbar>
+<mat-drawer-container class="drawer-container">
+    <mat-drawer #drawer mode="side" position="end" opened="false">Toggled Content Opens
+    </mat-drawer>
+    <mat-drawer-content>
+
+        <div class="map" leaflet (leafletMapReady)="onMapReady($event)" [leafletOptions]="mapOptions"></div>
+        <div>
+            <mat-icon (click)="drawer.toggle()" opened="true">double_arrow</mat-icon>
+        </div>
+        <router-outlet></router-outlet> 
+    </mat-drawer-content>
+
+</mat-drawer-container>
