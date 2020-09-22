@@ -11,9 +11,54 @@
 // -o-background-size: cover;
 //   }
 
-.container{
+.container {
     background-image: url("http://themestarz.net/html/innovo/assets/img/background-boat.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height:100%;
+    background-size: cover;
+    height: 100%;
+    //position: relative;
+    // transform: translateZ(20px);
+    //transform: rotateX(2.9687deg) rotateY(1.65407deg) translateZ(0px);
 }
+mat-form-field {
+    width: 20rem;
+    margin-top: 1%;
+}
+mat-hint {
+    color: white;
+}
+.first-field {
+    margin-left: 10%;
+    margin-right: 3%;
+}
+.welcome {
+    margin-top: 19%;
+}
+h1 {
+    font-size: 60px;
+    color: white;
+    display: inline-block;
+    text-shadow: 0 5px 16px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    font-weight: 600;
+    margin-left: 10%;
+    margin-top: 15px;
+}
+.form {
+    position: relative;
+    z-index: 1;
+}
+::ng-deep .mat-input-element::placeholder {
+    color: white;
+}
+button {
+    margin-left: 1%;
+    height: 3rem;
+    width: 6rem;
+    color: white;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    font-size: 1.2rem;
+}
+// .mat-form-field-appearance-outline .mat-form-field-flex {
+//     background-color: black !important;
+// }

@@ -14,8 +14,10 @@ import { HomeComponent } from './components/home/home.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { UnitComponent } from './components/unit/unit.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
+import { TableComponent } from './components/table/table.component';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoginComponent,
     HomeComponent,
     SummaryComponent,
-    UnitComponent
+    UnitComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatIconModule,
     LeafletModule,
     BrowserAnimationsModule,
-    ParticlesModule
+    ParticlesModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

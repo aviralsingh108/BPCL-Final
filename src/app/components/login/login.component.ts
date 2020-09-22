@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  constructor(private router : Router){
+  }
   width: number = 100;
   height: number = 100;
   myStyle: Object = {
@@ -21,7 +24,7 @@ export class LoginComponent {
   myParams: object = {
     "particles": {
       "number": {
-        "value": 40,
+        "value": 60,
         "density": {
           "enable": true,
           "value_area": 900
@@ -124,5 +127,7 @@ export class LoginComponent {
     },
     "retina_detect": true
   };
-
+  onSubmit(){
+    this.router.navigate(['/home']);
+  }
 }

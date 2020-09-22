@@ -5,10 +5,21 @@
 <button routerLink="/home/unit"></button>
 http://themestarz.net/html/innovo/assets/img/background-coffee.jpg
 [ngStyle]="{backgroundImage:'url(http://themestarz.net/html/innovo/assets/img/background-boat.jpg)'}"
-
 -->
 
 <div class="container">
-    Welcome to BPCL
+    <h1 class="welcome">Welcome to BPCL</h1><br>
+    <h1>Command & Control Center</h1><br>
+    <div class="form">
+        <mat-form-field class="first-field" appearance="outline" floatLabel="auto">
+            <input type="email" matInput placeholder="Email Address" required>
+            <mat-hint align="end">Include Domain Name</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="outline" floatLabel="auto">
+            <input matInput required placeholder="Password">
+            <mat-hint align="end">Min 8 digit</mat-hint>
+        </mat-form-field>
+        <button mat-stroked-button (click)="onSubmit()">Submit</button>
+    </div>
     <particles id="particles" [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
 </div>
